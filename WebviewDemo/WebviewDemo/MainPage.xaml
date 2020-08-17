@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WebviewDemo"
+             x:Class="WebviewDemo.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="CenterAndExpand">
+        <Button Text="grove &amp; dean"
+                CornerRadius="10"
+                Command="{Binding NavigateCommand}"
+                CommandParameter="https://myportal.grove-dean-insurance.co.uk"/>
+        <Button Text="Performance direct"
+                CornerRadius="10"
+                Command="{Binding NavigateCommand}"
+                CommandParameter="https://myportal.performancedirect.co.uk"/>
+    </StackLayout>
+
+</ContentPage>
